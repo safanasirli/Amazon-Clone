@@ -1,0 +1,16 @@
+.cartItems__container {
+    height: 300px;
+    background-color: white;
+    flex: 0.8;
+    margin-right: 18px;
+    padding: 20px;
+
+}
+
+.cartItems__title{
+
+}
+
+.cartItems__itemsContainer{
+
+}

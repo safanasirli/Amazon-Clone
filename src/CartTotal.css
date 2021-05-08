@@ -1,0 +1,6 @@
+.cartTotal__container {
+    height: 200px;
+    background-color: white;
+    flex: 0.2;
+    padding: 20px;
+}
