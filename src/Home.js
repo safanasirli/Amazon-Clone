@@ -33,10 +33,11 @@ function Home() {
             {
                 products.map((data)=>(
                  <Product
-                 title={data.product.name}
+                 name={data.product.name}
                  price={data.product.price}
                  rating={data.product.rating}
                  image={data.product.image}
+                 id={data.id}
                  />
                 ))
             }

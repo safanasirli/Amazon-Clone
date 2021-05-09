@@ -2,6 +2,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
+  border-bottom: 1px solid #DDD;
 }
 
 .cartItem__image {
@@ -18,6 +19,10 @@ img{
     width:100%;
 }
 
+.cartItem__info{
+    flex-grow: 1;
+}
+
 .cartItem__infoTop {
     color: #007185;
 }
@@ -29,6 +34,7 @@ h2{
 .cartItem__infoBottom {
     display: flex;
     margin-top: 4px;
+    align-items: center;
 }
 
 .cartItem__price {
@@ -41,4 +47,15 @@ h2{
     color: #007185;
     margin-left: 16px;
     cursor: pointer;
+}
+
+
+select {
+    border-radius: 7px;
+    background-color: #F0F2F2;
+    padding: 8px;
+    box-shadow:0 2px 5px rgba(15, 17, 17, 15);
+}
+select:focus {
+    outline: none;
 }

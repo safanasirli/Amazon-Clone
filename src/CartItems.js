@@ -4,13 +4,20 @@ import CartItem from './CartItem';
 
 
 
-function CartItems() {
+function CartItems({cartItems}) {
     return (
         <div className="cartItems__container">
             <div className="cartItems__title">Shopping Cart</div>
            <hr/>
            <div className="cartItems__itemsContainer">
-                <CartItem/>
+                {
+                    cartItems.map((item)=>(
+                        <CartItem
+                            id ={item.id}
+                            item= {item.product}
+                        />
+                    ))
+                }
            </div>
         </div>
     )

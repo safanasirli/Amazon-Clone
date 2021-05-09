@@ -1,5 +1,4 @@
 .cartItems__container {
-    height: 300px;
     background-color: white;
     flex: 0.8;
     margin-right: 18px;
@@ -8,9 +7,7 @@
 }
 
 .cartItems__title{
-
-}
-
-.cartItems__itemsContainer{
-
+margin-bottom: 8px;
+font-size: 25px;
+font-weight:700;
 }
