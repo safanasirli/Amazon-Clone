@@ -1,96 +1,92 @@
 .header {
-    height: 60px;
-    display:flex;
-    align-items: center;
-    background-color: #0F1111;
-    position: sticky;
-    justify-content: space-between;
-    color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #0f1111;
+  position: sticky;
+  justify-content: space-between;
+  color: white;
 }
 
 .header__logo {
-    width: 100px;
-    object-fit: contain;
-    margin-left: 11px;
-    margin-top: 18px;
+  width: 100px;
+  object-fit: contain;
+  margin-left: 11px;
+  margin-top: 18px;
 }
 
 .header__search {
-    display: flex;
-    flex-grow: 1;
-    height: 40px;
-    border-radius: 4px;
-    overflow: hidden;
-    padding-left: 4px;
-    background-color: white;
+  display: flex;
+  flex-grow: 1;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-left: 4px;
+  background-color: white;
 }
 
 .header__search:focus-within {
-box-shadow: 0 0 0 3px #F90;
-
+  box-shadow: 0 0 0 3px #f90;
 }
 
 .header__searchInput {
   flex-grow: 1;
-  border: 0; 
+  border: 0;
 }
 .header__searchInput:focus {
-    outline: none;
+  outline: none;
 }
 
 .header__searchIcon {
-    background-color: #febd69;
-    width: 45px !important;
-    color:black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #febd69;
+  width: 45px !important;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__optionLineOne {
-    font-size: 12px;
-    font-weight: 600;
-
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .header__optionLineTwo {
-    font-size: 15px;
-    font-weight: 800;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .header__nav {
-    display:-webkit-inline-box
-
+  display: -webkit-inline-box;
 }
 
 .header__option {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 9px 10px 9px
+  display: flex;
+  flex-direction: column;
+  padding: 10px 9px 10px 9px;
+  cursor: pointer;
 }
 
-.header__optionAddress{
-    display: flex;
-    padding-left: 9px;
-    align-items: center;
+.header__optionAddress {
+  display: flex;
+  padding-left: 9px;
+  align-items: center;
 }
 .header__optionCart {
-    display: flex;
-    align-items: center;
-    padding-right: 9px;
+  display: flex;
+  align-items: center;
+  padding-right: 9px;
 }
 .cart__link {
-   display: flex;
-   align-items: center; 
-   text-decoration: none;
-   color:white;
-   padding-right: 9px;
-
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding-right: 9px;
 }
 
 .header__cartCount {
-    padding-left: 4px;
-    font-weight: 700;
-    color: #f08804;
-
+  padding-left: 4px;
+  font-weight: 700;
+  color: #f08804;
 }

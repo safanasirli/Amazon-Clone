@@ -1,42 +1,59 @@
-import React, { useState, useEffect} from "react";
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
-import Header from './Header';
-import Cart from './Cart';
-import Home from './Home';
-import {db } from './firebase'
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./Header";
+import Cart from "./Cart";
+import Home from "./Home";
+import Login from "./Login";
+import { db, auth } from "./firebase";
 
 function App() {
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
-  const [ cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   const getCartItems = () => {
- db.collection('cartItems').onSnapshot((snapshot)=>{
-   const tempItems =snapshot.docs.map((doc)=>({
-     id: doc.id,
-     product: doc.data()
-   }))
-   setCartItems(tempItems);
- })
-  }
+    db.collection("cartItems").onSnapshot((snapshot) => {
+      const tempItems = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        product: doc.data(),
+      }));
+      setCartItems(tempItems);
+    });
+  };
+
+  const signOut = () => {
+    auth.signOut().then(() => {
+      localStorage.removeItem("user");
+      setUser(null);
+    });
+  };
 
   useEffect(() => {
     getCartItems();
-  }, [])
+  }, []);
+
+  console.log("User", user);
 
   return (
     <Router>
-      <div className="app">
-        <Header cartItems= {cartItems} />
+      {!user ? (
+        <Route path="/login">
+          <Login setUser={setUser} />
+        </Route>
+      ) : (
+        <div className="app">
+          <Header user={user} cartItems={cartItems} signOut={signOut} />
           <Switch>
             <Route path="/cart">
-              <Cart cartItems = {cartItems}/>
+              <Cart cartItems={cartItems} />
             </Route>
             <Route path="/">
-              <Home/>
+              <Home />
             </Route>
           </Switch>
-      </div>
+        </div>
+      )}
     </Router>
   );
 }
