@@ -37,8 +37,8 @@ function Header({ cartItems, user, signOut }) {
           <SearchIcon />
         </div>
       </div>
-      <div className="header__nav" onClick={signOut}>
-        <div className="header__option">
+      <div className="header__nav">
+        <div className="header__option" onClick={signOut}>
           <span className="header__optionLineOne">Hello,{user.name}</span>
           <span className="header__optionLineTwo"> Account & Lists</span>
         </div>
