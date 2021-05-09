@@ -38,9 +38,7 @@ function App() {
   return (
     <Router>
       {!user ? (
-        <Route path="/login">
           <Login setUser={setUser} />
-        </Route>
       ) : (
         <div className="app">
           <Header user={user} cartItems={cartItems} signOut={signOut} />
