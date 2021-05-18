@@ -1,12 +1,13 @@
 .cartItems__container {
-  background-color: white;
-  flex: 0.8;
-  margin-right: 18px;
-  padding: 20px;
+    background-color: white;
+    flex: 0.8;
+    margin-right: 18px;
+    padding: 20px;
+
 }
 
-.cartItems__title {
-  margin-bottom: 8px;
-  font-size: 25px;
-  font-weight: 700;
+.cartItems__title{
+margin-bottom: 8px;
+font-size: 25px;
+font-weight:700;
 }

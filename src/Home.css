@@ -1,11 +1,12 @@
 .home__container {
-  max-width: 1500px;
+  min-width: 1100px;
   margin: 0 auto;
 }
 
 .home__banner {
   background-image: url("https://i.imgur.com/SYHeuYM.jpg");
   min-height: 500px;
+  min-width: 1100px;
   background-position: center;
   background-size: cover;
   z-index: 1;

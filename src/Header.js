@@ -24,7 +24,7 @@ function Header({ cartItems, user, signOut }) {
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         />
       </Link>
-      <div className="header__optionAddress">
+      <div className="header__optionAddress" >
         <LocationOnIcon />
         <div className="header__option">
           <span className="header__optionLineOne">Hello </span>

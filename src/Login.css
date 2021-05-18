@@ -8,6 +8,7 @@
 
 .login__content {
   padding: 100px;
+  margin:10px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 1px 3px gray;
@@ -28,4 +29,24 @@
   height: 100px;
   width: 300px;
   margin-bottom: 40px;
+}
+@media (max-width: 767px){
+  .login__container{
+    width:100%;
+  min-width: fit-content;
+  min-height:700px;
+  }
+  .login__content{
+    justify-content: center;
+    place-items: center;
+    font-size: 15px;
+    margin-right:5px;
+    margin-left: 5px;
+  }
+  .amazon__logo{
+    align-items:center;
+    width:200px;
+    margin-top: 0;
+  }
+
 }
