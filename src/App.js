@@ -37,9 +37,6 @@ function App() {
 
   return (
     <Router>
-      {!user ? (
-          <Login setUser={setUser} />
-      ) : (
         <div className="app">
           <Header user={user} cartItems={cartItems} signOut={signOut} />
           <Switch>
@@ -51,7 +48,6 @@ function App() {
             </Route>
           </Switch>
         </div>
-      )}
     </Router>
   );
 }
