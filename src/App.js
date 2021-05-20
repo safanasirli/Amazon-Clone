@@ -37,8 +37,11 @@ function App() {
 
   return (
     <Router>
+      {!user ? (
+        <Login setUser={setUser} />
+      ) : (
         <div className="app">
-          <Header user={user} cartItems={cartItems} signOut={signOut} />
+          <Header signOut={signOut} user={user} cartItems={cartItems} />
           <Switch>
             <Route path="/cart">
               <Cart cartItems={cartItems} />
@@ -48,6 +51,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+      )}
     </Router>
   );
 }

@@ -51,12 +51,14 @@
 .header__optionLineOne {
   font-size: 12px;
   font-weight: 600;
+  text-decoration: none !important;
 }
 
 .header__optionLineTwo {
   font-size: 15px;
   font-weight: 800;
   position: relative;
+  text-decoration: none !important;
 }
 
 .header__nav {
@@ -68,6 +70,8 @@
   flex-direction: column;
   padding: 10px 9px 10px 9px;
   cursor: pointer;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .header__optionAddress {

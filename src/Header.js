@@ -24,7 +24,7 @@ function Header({ cartItems, user, signOut }) {
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         />
       </Link>
-      <div className="header__optionAddress" >
+      <div className="header__optionAddress">
         <LocationOnIcon />
         <div className="header__option">
           <span className="header__optionLineOne">Hello </span>
@@ -38,10 +38,12 @@ function Header({ cartItems, user, signOut }) {
         </div>
       </div>
       <div className="header__nav">
-        <div className="header__option" onClick={signOut}>
-          <span className="header__optionLineOne">Hello,{user.name}</span>
-          <span className="header__optionLineTwo"> Account & Lists</span>
-        </div>
+        <Link to="/login" style={{ textDecoration: "none" }}>
+          <div className="header__option" onClick={signOut}>
+            <span className="header__optionLineOne">Hello,{user.name}</span>
+            <span className="header__optionLineTwo"> Account & Lists</span>
+          </div>
+        </Link>
         <div className="header__option">
           <span className="header__optionLineOne">Returns</span>
           <span className="header__optionLineTwo">& Orders</span>
