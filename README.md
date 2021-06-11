@@ -1,3 +1,6 @@
+Amazon Clone is e-commerce website that allows users to Sign in, add products to the Cart, and edit products in the Cart. The project was built using React.js, React-router, Firebase (Authentication and Database). https://safanasirli-a2533.web.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
